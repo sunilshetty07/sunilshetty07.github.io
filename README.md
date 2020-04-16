@@ -1,5 +1,5 @@
 # sunilshetty07.github.io
-Thanks to vinaysomawat for this awsome template.
+Thanks to vinaysomawat.
 song:Astronomia
 Artist: 32Stiches, Hoober
 Album: Astronomia
