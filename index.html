@@ -28,6 +28,80 @@
       <link rel="stylesheet" href="css/style.css">
       <!-- Modernizr JS -->
       <script src="js/modernizr-2.6.2.min.js"></script>
+
+<style>
+.glitch 
+{
+ grid-column: 1;
+ grid-row: 1;
+ align-self: center;
+ justify-self: center; 
+ text-shadow: 0px -5px 10px #b51dld, 0px Opx 5px rgba (181,29,29,0),
+ 0px 0px 10px rgba(181,29,29,0),
+ 0px 0px 15px rgba(181,29,29,0),
+ 0px 0px 20px rgba(181,29,29,0) ; 
+ animation: shift 1.5s ease-in-out infinite alternate, blur 8s ease-in-out infinite alternate; 
+ transform: skewX( 0deg);
+}
+.glitch p { margin: 0;
+ font-size: 38px; 
+ line-height: 5rem; 
+ text-align: center; 
+ text-transform: uppercase; 
+ opacity: 0.8;
+}
+@keyframes shift { 
+8, 11%, 53%, 76, 77%, 82, 87%, 98% {
+ transform: skew(0deg);
+ }
+ 8% 
+ {
+ transform: skew( 39deg);
+ }
+ 11%
+ {
+ transform: skew(30deg); 
+ }
+ 53% 
+ {
+ transform: skew(6deg);
+ }
+ 76%
+ {
+ transform: skew(-33 deg);
+ }
+ 77% 
+ {
+ transform: skew(8deg);
+ }
+ 82% 
+ { 
+ transform: skew(-36deg); 
+ }
+ 879 
+ {
+ transform: skew( 10deg);
+ }
+ 98%
+ {
+ transform: skew( 14deg); 
+ }
+}
+
+
+@keyframes blur { 4%, 23%, 40%, 39% { 
+text-shadow: 0px -5px 10px #b51d1d, 0px 0px 5px rgba(181,29,29,0), 0px 0px 10px rgba( 181, 29, 29, 0), 2px 1px 15px rgba(230,25,25,0), 0px 0px 20px rgba( 181, 29, 29, 0);
+}
+5%, 26%, 28%, 46% {
+ text-shadow: 0px -5px 10px #b51d1d, 0px 0px 5px #b51d1d, 0px 0px 10px #b51d1d, 2px 1px 15px #e61919, 0px 0px 20px #b51dld;
+ }
+
+3%, 10%, 27%, 30%, 47% 
+{
+ text-shadow: 0px -5px 10px rgba(181,29,29,0),0px 0px 5px rgba(181, 29, 29, 0), 0px 0px 10px rgba(181, 29, 29, 0), 2px 1px 15px #e61919, 0px 0px 20px rgba(181,29,29,0) ;
+ }
+}
+</style>
 	
    </head>
    <body>
@@ -74,7 +148,13 @@
                            <div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
                               <div class="col-md-12">
                                  <div class="about-desc">
-                                    <h1>Sunil <span style="color:orange">Shetty</span></h1>
+                                     <h1 class="glitch" style="overflow: hidden;
+									 display: grid; 
+									 grid-template-columns: 1fr;
+									 grid-template-rows: 1fr;
+									 font-family: Teko, sans-serif; 
+									 color: #735c62;">Sunil Shetty
+				     </h1>
                                     <hr>
                                     <p>Student | <span style="color:#FC99DD">SMVITM</span></p>
                                  </div>
