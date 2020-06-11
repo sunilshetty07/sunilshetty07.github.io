@@ -33,8 +33,11 @@
 		document.addEventListener('click',musicPlay);
 		function musicPlay(){
 		document.getElementById('id').play();
-		document.removeEventListener('click',musicPlay);
-				}
+		document.ondblclick=function()
+		{
+		document.getElementById('id').pause();
+		}
+		}
 	   </script>
 
 <style>
